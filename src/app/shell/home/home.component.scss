@@ -1,0 +1,39 @@
+.opacity {
+    height: 60%;
+    width: 60%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        letter-spacing: 2px;
+        color: white;
+        font-size: 2vw;
+        font-family: Medium 500;
+    }
+}
+.citWrapper {
+    height: 40vw;
+    min-height: 350px;
+    margin: 0 auto;
+    padding: 0;
+    background-image: url("../../../assets/imgs/starrynight.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .opacity{
+        height: 60%;
+        width: 70%;
+        padding: 4%;
+        p{
+            font-size: 18px;
+        } 
+    }
+}

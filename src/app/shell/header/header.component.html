@@ -1,6 +1,6 @@
 <header class="col-12">
     <div class="title">
-        <h1 >LUIGI D'ANTONI</h1>
+        <h1>LUIGI D'ANTONI</h1>
     </div>
     <nav>
         <div id="nav-icon1" (click)="toggleNav()"  [ngClass]="{'open': opened}">
@@ -10,12 +10,12 @@
         </div>
         <div [ngClass]='{"visible":opened}' class="nav-wrapper">
             <ul class="col-8 col-xl-6 ml-md-1 p-0 pt-md-0 pt-4">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Su di me</a></li>
-                <li><a href="#">Romanzi</a></li>
-                <li><a href="#">Racconti</a></li>
-                <li><a href="#">Saggi</a></li>
-                <li><a href="#">Contatti</a></li>
+                <li><a routerLink="home" routerLinkActive="active">Home</a></li>
+                <li><a routerLink="su_di_me" routerLinkActive="active">Su di me</a></li>
+                <li><a routerLink="romanzi" routerLinkActive="active">Romanzi</a></li>
+                <li><a routerLink="racconti" routerLinkActive="active">Racconti</a></li>
+                <li><a routerLink="saggi" routerLinkActive="active">Saggi</a></li>
+                <li><a routerLink="contatti" routerLinkActive="active">Contatti</a></li>
             </ul>
         </div>
     </nav>
