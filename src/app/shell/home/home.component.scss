@@ -1,12 +1,16 @@
 .opacity {
-    height: 60%;
+    height: 50%;
     width: 60%;
     text-align: center;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(116, 38, 38, 0.6);
     padding: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
     p {
         letter-spacing: 2px;
         color: white;
@@ -15,25 +19,37 @@
     }
 }
 .citWrapper {
-    height: 40vw;
-    min-height: 350px;
+    // height: 40vw;
+    // min-height: 350px;
+    height: 100vh;
     margin: 0 auto;
     padding: 0;
-    background-image: url("../../../assets/imgs/starrynight.jpg");
+    background-image: url("../../../assets/imgs/sky.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+}
+
+.goToTheSite {
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+   
 }
 
 @media (max-width: 767px) {
     .opacity{
-        height: 60%;
+        height: 40%;
         width: 70%;
         padding: 4%;
+        background-color: rgba(0, 0, 0, 0.6);
         p{
-            font-size: 18px;
+            font-size: 20px;
         } 
+    }
+
+    .citWrapper {
+        background-image: url("../../../assets/imgs/onde.jpg") ;
     }
 }

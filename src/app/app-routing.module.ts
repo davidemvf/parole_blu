@@ -16,13 +16,16 @@ const routes: Routes = [
       component: ShellComponent,
       children: [
           { path: '', redirectTo: '/home', pathMatch: 'full' },
-          { path: 'home', component: HomeComponent },
           { path: 'su_di_me', component: AboutMeComponent },
           { path: 'romanzi', component: RomanziComponent },
           { path: 'racconti', component: RaccontiComponent },
           { path: 'saggi', component: SaggiComponent },
           { path: 'contatti', component: ContattiComponent}
       ],
+  },
+  {   
+      path: 'home', 
+      component: HomeComponent 
   },
   { 
       path: 'error', 
