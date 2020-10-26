@@ -8,12 +8,12 @@ header {
 
 .title {
     height: 90px;
-    background-color: $header-blue;
+    background-color: rgba(22, 77, 77, 0.4);
     color: $header-font;
     text-align: center;
     h1 {
         line-height: 90px;
-        font-family: Regular 400, cursive;
+        font-family: Playfair Display, cursive;
         font-weight: lighter;
         letter-spacing: 5px;
     }
@@ -21,7 +21,7 @@ header {
 
 nav {
     padding: 24px;
-    background-color: $nav-blue;
+    background-color: rgba(22, 77, 77, 0.4);
     ul {
         display: flex;
         justify-content: space-between;
@@ -30,12 +30,12 @@ nav {
     
     ul a {
         color: $nav-link;
-        font-family: Pontano Sans;
+        font-family: Playfair Display;
         font-size: 20px;
         cursor: pointer;
     }
     ul a:hover {
-        color: $nav-link-enter;
+        color: white;
         transition: 0.5s;
     }
 }
