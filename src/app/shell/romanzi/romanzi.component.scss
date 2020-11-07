@@ -1,0 +1,33 @@
+@import "../../../vars.scss";
+
+.romanzi-wrapper {
+    margin: 20px 3%;
+}
+
+.romanzo-wrapper {
+    background-color:  $back-wrapper;
+    padding: 20px;
+    margin-bottom: 12px;
+}
+
+.img-wrapper {
+    min-width: 230px;
+}
+.copertina {
+    height: 325px;
+    width: 225px;
+}
+
+.titoloRomanzo {
+    font-family: $titolo-romanzo;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 0.3vw;
+}
+
+
+.descrizione {
+    font-family: $descrizione;
+    font-size: 15px;
+    line-height: 25px;
+}

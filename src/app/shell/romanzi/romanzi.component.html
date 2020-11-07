@@ -1,1 +1,13 @@
-<p>romanzi works!</p>
+<div class="romanzi-wrapper">
+    <div *ngFor="let romanzo of mockRomanzi" class="row romanzo-wrapper">
+        <div class="col-md-3 col-12 img-wrapper">
+            <img class="copertina" [src]="romanzo.image" alt="luigi d'antoni">
+        </div>
+        <div class="col-md-8 col-lg-9 col-12 desc">
+            <h3 class="titoloRomanzo">{{romanzo.titolo}}</h3>
+            <br>
+            <p class="descrizione">{{romanzo.descrizione}}</p>
+        </div>
+    </div>
+</div>
+

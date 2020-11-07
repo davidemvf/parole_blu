@@ -4,16 +4,14 @@ header {
     padding: 0;
 } 
 
-
-
 .title {
     height: 90px;
-    background-color: rgba(22, 77, 77, 0.4);
-    color: $header-font;
+    background-color: $back-wrapper;
+    color: $white;
     text-align: center;
     h1 {
         line-height: 90px;
-        font-family: Playfair Display, cursive;
+        font-family: $titolo-font, cursive;
         font-weight: lighter;
         letter-spacing: 5px;
     }
@@ -21,27 +19,26 @@ header {
 
 nav {
     padding: 24px;
-    background-color: rgba(22, 77, 77, 0.4);
+    background-color: $back-wrapper;
     ul {
         display: flex;
         justify-content: space-between;
         list-style-type: none;
     }
-    
     ul a {
         color: $nav-link;
-        font-family: Playfair Display;
+        font-family: $nav-font;
         font-size: 20px;
         cursor: pointer;
     }
     ul a:hover {
-        color: white;
+        color: $white;
         transition: 0.5s;
     }
 }
 
 .active {
-    color:white !important;
+    color: $white !important;
 }
 
 
@@ -55,14 +52,6 @@ nav {
     height: 25px;
     position: relative;
     display: none;
-    // -webkit-transform: rotate(0deg);
-    // -moz-transform: rotate(0deg);
-    // -o-transform: rotate(0deg);
-    // transform: rotate(0deg);
-    // -webkit-transition: .5s ease-in-out;
-    // -moz-transition: .5s ease-in-out;
-    // -o-transition: .5s ease-in-out;
-    // transition: .5s ease-in-out;
     cursor: pointer;
   }
 
