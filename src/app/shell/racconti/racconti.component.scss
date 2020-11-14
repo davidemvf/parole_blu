@@ -1,23 +1,79 @@
 @import "src/vars.scss";
 
 .racconti-wrapper {
-    // width: 100vw;
+    // height: calc(100vh-680px);
+    margin-top: 30px;
+    position: relative;
 }
+
+ng-scrollbar {
+  --scrollbar-size: 8px;
+  --scrollbar-thumb-color:  rgba(22, 77, 77, 0.4);
+  --scrollbar-thumb-hover-color: rgba(50, 156, 197, 0.555);
+  --scrollbar-border-radius: 4px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 30px;
     justify-items: center;
     align-items: center;
-    margin: 40px auto;
+    margin: 0 auto;
     width: 80%;
-    height: 600px;
-    overflow: auto;
   }
   
-  .grid-item1 {
-    background: $back-wrapper;
-    text-align: center;
-    width: 300px;
-    height: 400px;
-  }
+.grid-item1 {
+  background: $back-wrapper;
+  text-align: center;
+  width: 250px;
+  height: 350px;
+}
+
+.reader {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  z-index: 100;
+  transition: 2s;
+  position:absolute;
+  top: 0;
+  text-align: center;
+  // padding: 50px;
+  // padding-top:100px;
+  overflow: auto;
+  // overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.novel {
+  font-size: 30px;
+  padding: 0 100px 150px 100px;
+}
+
+.hiddenText {
+  display: none;
+  transition: 1s;
+}
+
+.gridClosed {
+  // margin-left: 1300px;
+  height: 0;
+  transition: 2s;
+}
+
+.closed {
+  height: 0px;
+  width: 100%;
+  // display: none;
+  position:absolute;
+  top: 0;
+  text-align: center;
+  transition: 2s;
+  overflow: hidden;
+}
+
+  

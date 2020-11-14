@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NgScrollbarModule } from 'ngx-scrollbar';
 
 import { AppComponent } from './app.component';
 import { ShellComponent } from './shell/shell.component';
@@ -15,6 +16,8 @@ import { ContattiComponent } from './shell/contatti/contatti.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HeaderComponent } from './shell/header/header.component';
 import { FooterComponent } from './shell/footer/footer.component';
+import { CarouselComponent } from './shared/carousel/carousel.component';
+
 
 @NgModule({
   declarations: [
@@ -29,12 +32,14 @@ import { FooterComponent } from './shell/footer/footer.component';
     PageNotFoundComponent,
     HeaderComponent,
     FooterComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgScrollbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

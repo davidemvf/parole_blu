@@ -18,7 +18,7 @@ const routes: Routes = [
           { path: '', redirectTo: '/home', pathMatch: 'full' },
           { path: 'su_di_me', component: AboutMeComponent },
           { path: 'romanzi', component: RomanziComponent },
-          { path: 'racconti', component: RaccontiComponent },
+          { path: 'racconti', component: RaccontiComponent},
           { path: 'saggi', component: SaggiComponent },
           { path: 'contatti', component: ContattiComponent}
       ],

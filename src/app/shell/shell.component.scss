@@ -1,6 +1,7 @@
 .main-wrapper {
     // padding-top: 20px;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
+    
     // height: 420px;
     // background-color: #f9f9f9;
 }
@@ -8,6 +9,7 @@
 .background {
     background-image: url("../../assets/imgs/sky.jpg");
     background-size: 100% 100%;
+    min-height: 100vh;
     // background-repeat: repeat;
 }
 

@@ -1,14 +1,23 @@
 <div class="racconti-wrapper">
-    <div class="grid-container">
-        <div class="grid-item1">1</div>
-        <div class="grid-item1">2</div>
-        <div class="grid-item1">3</div>
-        <div class="grid-item1">4</div>
-        <div class="grid-item1">5</div>
-        <div class="grid-item1">6</div>
-        <div class="grid-item1">5</div>
-        <div class="grid-item1">6</div><div class="grid-item1">5</div>
-        <div class="grid-item1">6</div><div class="grid-item1">5</div>
-        <div class="grid-item1">6</div>
-    </div>
+    <ng-scrollbar>
+        <div class= "grid-container">
+             <div [ngClass]="{gridClosed: activateReader}" class="grid-item1"  (click)="activateReader = true">1</div>
+             <div [ngClass]="{gridClosed: activateReader}" class="grid-item1">2</div>
+             <div class="grid-item1">3</div>
+             <div class="grid-item1">4</div>
+             <div class="grid-item1">5</div>
+             <div class="grid-item1">6</div>
+             <div class="grid-item1">5</div>
+             <div class="grid-item1">6</div>
+             <div class="grid-item1">5</div>
+             <div class="grid-item1">6</div>
+             <div class="grid-item1">5</div>
+             <div class="grid-item1">6</div>
+        </div>
+    </ng-scrollbar>
+
+</div>
+
+<div [ngClass]="{reader: activateReader, closed: !activateReader}" >
+    <app-carousel [racconti]="racconti"></app-carousel>
 </div>
