@@ -4,6 +4,9 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgScrollbarModule } from 'ngx-scrollbar';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { ShellComponent } from './shell/shell.component';
@@ -39,7 +42,9 @@ import { CarouselComponent } from './shared/carousel/carousel.component';
     AppRoutingModule,
     RouterModule,
     BrowserAnimationsModule,
-    NgScrollbarModule
+    NgScrollbarModule,
+    AngularFireModule.initializeApp(environment.firebase),
+ 	  AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
